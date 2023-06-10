@@ -182,7 +182,7 @@ router.put("/:item", auth.required, function(req, res, next) {
         req.item.description = req.body.item.description;
       }
 
-      if (typeof req.body.item.image !== "image") {
+      if (typeof req.body.item.image !== "undefined") {
         req.item.image = req.body.item.image;
       }
 
