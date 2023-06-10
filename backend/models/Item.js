@@ -49,7 +49,7 @@ ItemSchema.methods.toJSONFor = function(user) {
     slug: this.slug,
     title: this.title,
     description: this.description,
-    image: this.image ? this.image: "https://static.productionready.io/images/smiley-cyrus.jpg",
+    image: this.image ? this.image: "../assets/placeholder.png",
     createdAt: this.createdAt,
     updatedAt: this.updatedAt,
     tagList: this.tagList,
